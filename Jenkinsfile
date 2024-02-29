@@ -10,6 +10,12 @@ pipeline {
             }
 
          }
+         stage('Install node') {
+            steps {
+                // Run npm install to install dependencies
+                sh 'python3 nodeinstall.py'
+            }
+        }
         
         stage('Build') {
             steps {
