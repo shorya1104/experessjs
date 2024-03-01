@@ -27,7 +27,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Run Node.js application
-                sh 'npm i forever -g'
+                sh 'sudo npm i forever -g'
                 sh 'forever start server.js '
             }
         }
