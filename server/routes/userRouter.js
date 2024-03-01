@@ -12,7 +12,7 @@ router.post('/login', userController.login);
 //Get all user
 router.get('/getUser/:id', verify, userController.getUser);
 //Get User by ID
-router.get('/getusers', verify, allowIfLoggedin, grantAccess('readAny', 'profile'), userController.getusers);
+// router.get('/getusers', verify, allowIfLoggedin, grantAccess('readAny', 'profile'), userController.getusers);
 //Update User
 router.put('/updateUser/:id', verify, grantAccess('updateAny', 'profile'), userController.updateUser);
 //Delete User

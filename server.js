@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 require("dotenv").config();
-require('./database.Config.js')
+require('./database.config.js')
 
 const userRouter = require("./server/routes/userRouter.js")
 
